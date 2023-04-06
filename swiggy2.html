@@ -6,19 +6,334 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>swiggyhome</title>
     <style>
+
+      /* * {
+            padding: 0;
+            margin: 0;
+        } */
+
+        
         #screen{
             height: 2500px;
             width:100%;
+            /* margin:auto ; */
             border: 5px solid orange;
+            
         }
+        #nvbar{
+            height:80px;
+            width:93%;
+            /* border:2px solid green; */
+            display: flex;
+        }
+        #nvbar>div{
+            margin-top: 12px;
+            margin-left:45px;
+            display: flex;
+            /* border: 4px solid maroon; */
+            justify-content: space-around;
+            
+        }
+        #nvbar>div:nth-child(1){
+            width: 40px;
+            height: 70px;
+            border: 1px solid yellow;
+        }
+        #nvbar>div:nth-child(1)>img{
+            width: 40px;
+            height: 60px;
+        }
+        #nvbar>div:nth-child(2){
+            height: 45px;
+            width: 22%;
+            font-size: 14px;
+            color: gray;
+        }
+        #nvbar>div:nth-child(3){
+            height: 45px;
+            width: 50%;
+            margin-left: auto;
+            display: flex;
+             /* border: 2px solid blue; */
+        
+        }
+        #nvbar>div:nth-child(3)>div{
+            height: 20px;
+            width: 120px;
+            /* border: 1px solid red; */
+            
+        }
+
+        #filter{
+            height: 80px;
+            width: 93%;
+            background-color: rgb(251,251,251);
+            border-bottom: 1px solid gray;
+            display: flex;
+            margin: auto;
+        }
+        #filter>div{
+            display: flex;
+            /* justify-content: space-around; */
+            /* margin-left: 45px;
+            margin-top: 20px; */
+        }
+        #filter>div:nth-child(2){
+            width:71%;
+            /* justify-content: space-between; */
+            display: flex;
+            margin-left: 24%;
+            /* border:5px solid red; */
+            
+        }
+        #filter>div:nth-child(1){
+            width:15%;
+            height: 70px;
+        }
+
+        #filter>div:nth-child(1)>h1{
+            width:100%;
+            /* border: 1px solid red; */
+            font-size: 25px;
+            margin-top: 50px;
+            
+
+        }
+
+        #filter>div:nth-child(2)>p{
+            font-size: 17px;
+            color: gray;
+            margin-top:44px;
+            width: 90%;
+        
+        }
+        #pic{
+            height:1500px;
+            width:92%;
+            border:2px solid red;
+            display: flex;
+            justify-content: space-around;
+            margin:auto ;
+            flex-wrap: wrap;
+            
+        }
+        #pic>div{
+            width:23%;
+            height: 350px;
+            /* border:3px solid green; */
+             margin-bottom:20px ;
+             
+        }
+        #pic>div>div:nth-child(1){
+            width:100%;
+            height: 200px;
+            /* border:2px solid red; */
+        }
+        #pic>div>div:nth-child(1)>img{
+            width: 100%;
+            height: 100%;
+            
+        }
+        #pic>div>div:nth-child(2)>h4{
+            font-size: medium;
+            margin-top:11px;
+        
+
+        }
+        #pic>div>div:nth-child(2)>p{
+            font-size: 12px;
+
+    
+        }
+
+
+        #pic>div>div:nth-child(2)>h6{
+            color: brown;
+            border-top:1px solid gray;
+            font-size: 15px;
+
+            
+            
+        }
+        
+
+
+
     </style>
 
     
 </head>
 <body>
     <div id="screen">
+        <div id="nvbar">
+        
+            <div>
+                <img src="/swiggy logo.png"/>
+            </div>
+            <div>
+                <p><b>other</b> Vashi,Navi mumbai,Maharashtra,India</p>
 
-    </div>
+            </div>
+            <div>
+                <p>Search</p>
+                <p>Offer </p>
+                <p>help</p>
+                <p>Sign In</p>
+                <p>Cart</p>
+            </div>
+            </div>
+            <div id="filter">
+                <div>
+                    <h1>43 resturants</h1>
+                </div>
+                <div>
+                    <p>Relevance</p>
+                    <p>Delivery Time</p>
+                    <p>Rating</p>
+                    <p>Cost:Low To High</p>
+                    <p>Cost:High To Low</p>
+                    <p>Filter</p>
+                </div>
+                
+            </div>
+            <div id="pic">
+                <div>
+                     <div>
+                        <img src="/pic1.webp"/>
+
+                     </div>                  
+                        <div>
+                    <h4>Cafe irani chai@ bun maska</h4>
+                    <p>Beverages,snaks</p>
+                    <p>.22 MINS .Rs 200 FOR TWO</p>
+                    <h6> 10% off | USE JUMBO</h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="/pic2.webp"/>
+                    </div>
+                    <div>
+                        <h4>Shabri</h4>
+                        <P>South Indian, Indian, Snacks, North Indian, Juices</P>
+                        <P>4.2 .20 MIN . Rs 300 FOR TWO</P>
+                        <h6>50% off|Use TRYNEW</h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="/pik3.webp"/>
+                    </div>
+                    <div>
+                        <h4>Sanjay Lunch Home</h4>
+                        <P>South Indian, Indian, Snacks, North Indian, Juices</P>
+                        <P>4.2 .20 MIN . Rs 300 FOR TWO</P>
+                        <h6>50% off|Use TRYNEW</h6>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="/pik4.webp"/>
+                    </div>
+                    <div>
+                        <h4>Sanjay Lunch Home</h4>
+                        <P>South Indian, Indian, Snacks, North Indian, Juices</P>
+                        <P>4.2 .20 MIN . Rs 300 FOR TWO</P>
+                        <h6>50% off|Use TRYNEW</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/pic5.webp"/>
+                    </div>
+                    <div>
+                        <h4>R Bhagat Tarrachand</h4>
+                        <P>North Indian, Chinese, Street Food</P>
+                        <P>4.2 .20 MIN . Rs 300 FOR TWO</P>
+                        <h6>60% off|Use TRYNEW</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/pic6.jpg"/>
+                    </div>
+                    <div>
+                        <h4>NICream</h4>
+                        <P>Desserts,Ice cream</P>
+                        <P>4.2 .20 MIN . Rs 300 FOR TWO</P>
+                        <h6>Flat Rs 100 OFF on First Order</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/pic7.webp"/>
+                    </div>
+                    <div>
+                        <h4>Bhagat Tarachand</h4>
+                        <P>North Indian</P>
+                        <P>4.2 .20 MIN . Rs 400 FOR TWO</P>
+                        <h6>Flat Rs 125 OFF on First Order</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/pic8.jpg"/>
+                    </div>
+                    <div>
+                        <h4>Baskin Robbins</h4>
+                        <P>Desserts,Ice cream</P>
+                        <P>4.2 .20 MIN . Rs 300 FOR TWO</P>
+                        <h6>Flat Rs 125 OFF on First Order</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/pic9.jpg"/>
+                    </div>
+                    <div>
+                        <h4>Baskin Robbins</h4>
+                        <P>Desserts,Ice cream</P>
+                        <P>4.6 .20 MIN . Rs 300 FOR TWO</P>
+                        <h6>Flat Rs 50 OFF on First Order</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/pic10.webp"/>
+                    </div>
+                    <div>
+                        <h4>Zeera Juice</h4>
+                        <P>Juice,Ice cream</P>
+                        <P>4.2 .20 MIN . Rs 300 FOR TWO</P>
+                        <h6>Flat Rs 125 OFF on 249</h6>
+                    </div>
+    
+    
+                </div>
+              
+           
+       
+       </div> 
+   </div>
+                
+
+            </div>
+        
+
+
+    
     
 </body>
 </html>

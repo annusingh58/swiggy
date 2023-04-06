@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <script src="https://kit.fontawesome.com/5553f878fa.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #screen{
+            width: 100%;
+            height: 2500px;
+            border:5px solid red;
+        }
+        #nvbar{
+            height:80px;
+            width:100%;
+            border:2px solid green;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 5px 10px 18px rgb(224, 221, 221);
+            align-items: center;
+        }
+        
+            
+         
+        #nvbar>div:nth-child(1){
+            width: 4%;
+            height: 60px;
+            /* border: 1px solid yellow; */
+        }
+        #nvbar>div:nth-child(1)>img{
+            width: 100%;
+            height:100%;
+        }
+        #nvbar>div:nth-child(2){
+            height: 30%;
+            width: 25%;
+            /* border:1px solid green; */
+            color: gray;
+        }
+        #nvbar>div:nth-child(2)>p{
+            font-size: 18px;
+            margin-top: -3px;
+        }
+
+        #nvbar>div:nth-child(3){
+            height: 50%;
+            width: 50%;
+            /* margin-left: auto; */
+            display: flex;
+             /* border: 2px solid blue; */
+             flex-wrap: wrap;
+        
+        }
+        #nvbar>div:nth-child(3)>p{
+            width: 19%;
+            margin-top: 8px;
+            
+        }
+        #nvbar>div:nth-child(3)>p>span>i{
+            margin-right: 10px;
+
+        }
+
+       #body{
+            width:60%;
+            height: 1000px;
+            margin: auto;
+            border: 2px solid black;
+       }
+       #home{
+            width:100%;
+            height: 40px;
+            /* margin: auto; */
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+
+       }
+       #home>div:nth-child(1){
+        height: 25px;
+        width: 45%;
+        /* border:1px solid maroon; */
+       }
+
+       #home>div:nth-child(1)>p{
+        font-size: 11px;
+        color: grey;
+       }
+
+       #home>div:nth-child(2){
+        height: 25px;
+        width:10%;
+        /* border:1px solid maroon; */
+       }
+       #home>div:nth-child(2)>span{
+        height: 100%;
+        width:100%;
+        margin-left: 65%;
+       }
+       #home>div:nth-child(2)>span>i{
+        width: 100%;
+        height:100% ;
+        font-size: 25px;
+        /* border:1px solid maroon; */
+
+       }
+
+       #order{
+        width:95%;
+        /* height:900px; */
+        border:3px solid blue;
+       margin-left:4.5%;
+       }
+       #order1{
+        width:100%;
+        height: 140px;
+        /* border: 1px solid red; */
+        display: flex;
+        border-bottom: 1px dashed gray;
+
+       }
+       #order1>div:nth-child(1){
+        width: 70%;
+        height: 140px;
+        /* border: 1px solid green; */
+        padding:20px;
+       }
+       #order1>div:nth-child(1)>h3{
+        font-size: 20px;
+        margin-bottom: 15px;
+       }
+       #order1>div:nth-child(1)>p{
+        font-size: 12px;
+        color: gray;
+       }
+       #order1>div:nth-child(1)>p:nth-child(4){
+        margin-top: 20px;
+       }
+
+
+
+
+       #order1>div:nth-child(2){
+        width:30%;
+        height:100px ;
+        /* border: 1px solid green; */
+        margin-left: 50%;
+        margin-top: 4%;
+       }
+       #order1>div:nth-child(2)>div{
+        width:70%;
+        height: 80px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding:5px;
+       }
+       #order1>div:nth-child(2)>div>p:nth-child(1){
+        color: green;
+        height: 40px;
+        border-bottom: 1px solid gray;
+        text-align: center;
+        padding-top: 10px;
+       }
+       #order1>div:nth-child(2)>div>p:nth-child(2){
+        color: gray;
+        height:50px;
+        font-size: 14px;
+        padding-top: 10px;
+       }
+
+       #order2{
+        width:100%;
+        height: 220px;
+        /* border: 1px solid red; */
+       }
+       #order2>div:nth-child(1){
+        height: 50px;
+        width:100%;
+        /* border:2px solid blue; */
+        display: flex;
+       }
+       #order2>div:nth-child(1)>div:nth-child(1){
+        margin-right: 20px;
+        align-items: center;
+        display: flex;
+        
+        
+       }
+       #order2>div:nth-child(1)>div:nth-child(2){
+        align-items: center;
+        display: flex;
+        
+       }
+       #order2>div:nth-child(2){
+        width: 80%;
+        height: 80px;
+        /* border:2px solid black; */
+        display: flex;
+        justify-content: space-between;
+       }
+       #order2>div:nth-child(2)>div{
+        width:30%;
+        height:60px;
+        border:2px solid gray;
+        border-radius: 10px;
+        
+       }
+       #order2>div:nth-child(2)>div>p{
+            font-size: 12px;
+            color: grey;
+            margin-top: 5px;
+            margin-left: 5px;
+            padding: 1px;
+       }
+       #order2>div:nth-child(3){
+        height: 45px;
+        /* border:1px solid red; */
+        width:100%;
+        border-bottom: 1px solid grey;
+        
+       }
+       #order2>div:nth-child(3)>p{
+        font-size: 20px;
+        color: gray;
+        margin-top: 35px;
+        
+
+       }
+
+       #Top{
+        /* height:400px; */
+        width:100%;
+        /* border:5px solid green; */
+        border-bottom: 5px solid gray;
+
+       }
+       #Top>div:nth-child(1){
+        border:1px solid red;
+       }
+
+        #Top>div:nth-child(1)>h3{
+            width:100%;
+            margin-top: 10px;
+            margin-bottom:25px ;
+    
+        }
+        #Top>div:nth-child(2){
+            height: 500px;
+            width: 100%;
+            /* border:1px solid brown; */
+            margin-bottom: 30px;
+        }
+        #Top>div:nth-child(2)>img{
+            height: 100%;
+            width: 100%;
+        }
+        #food{
+            height: 500px;
+            width: 100%;
+            border: 1px solid mediumvioletred;
+        }
+        #food>h2{
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        #food>div{
+            height: 170px;
+            width: 100%;
+            border:2px solid greenyellow;
+            display: flex;
+        }
+        #food>div>div:nth-child(1){
+            width:80%;
+            height:100%;
+            border:1px solid green;
+        }
+        #food>div>div:nth-child(1)>h3{
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+        #food>div>div:nth-child(1)>p:nth-child(2){
+            margin-bottom: 20px;
+        }
+        #food>div>div:nth-child(1)>p:nth-child(3){
+             font-size:14px ;
+             color: gray;
+        }
+
+
+
+        #food>div>div:nth-child(2){
+            width:20%;
+            height:100%;
+            border:1px solid green;
+        }
+        #food>div>div:nth-child(2)>img{
+            height: 50%;
+            margin-left: 20px;
+            margin-top: 20px;
+
+                }
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="nvbar">
+        <div>
+                <img src="/swiggy logo.png"/>
+        </div>
+         <div>
+                <p><b>other</b> Vashi,Navi mumbai,Maharashtra,India</p>
+
+            </div>
+            <div>
+                <p><span><i class="fa-solid fa-magnifying-glass"></i></span>Search</p>
+                <p><span><i class="fa-solid fa-certificate"></i></span>Offer </p>
+                <p><span><i class="fa-solid fa-hand-holding-hand"></i></span>help</p>
+                <p><span><i class="fa-regular fa-user"></i></span>Sign In</p>
+                <p><span><i class="fa-solid fa-cart-shopping"></i></span>Cart</p>
+            </div>
+            </div>
+            <div id="body">
+                <div id="home">
+                    <div>
+                        <p>Home/Mumbai/Vashi/McDonald's</p>
+
+                    </div>
+                    <div>
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+                <div id="order">
+                    <div id="order1">
+                        <div>
+                            <h3>McDonald's</h3>
+                            <p>Burgers,Beverages</p>
+                            <p>Vashi,o.5 km</p>
+                            <p>0.5 Kms| Rs 34 Delivery fee will apply</p>
+                        </div>
+                        <div>
+                            <div>
+                                <p><span><i class="fa-solid fa-star"></i></span>4.5</p>
+                                <p>500+rating</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="order2">
+                        <div>
+                        <div>
+                        <p><span><i class="fa-solid fa-circle-half-stroke"></i></span>16MIN</p>                          </p>                                
+
+                            </div>
+                            <div>
+                                <p><span><i class="fa-solid fa-indian-rupee-sign"></i></span>₹400 for two</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p>20% OFF UPTO Rs 125</p>
+                                <p>USE KOTAK125|ABOVE Rs 500</p>
+                            </div>
+                           <div>
+                                <p>20% OFF UPTO Rs 125</p>
+                                <p>USE KOTAK125|ABOVE Rs 500</p>
+                            </div>
+                            <div>
+                                <p>20% OFF UPTO Rs 125</p>
+                                <p>USE KOTAK125|ABOVE Rs 500</p>
+                            </div>
+
+                        </div>
+                        <div>
+                            <p>Veg Only</p>
+                        </div>
+                    </div>
+                    <div id="Top">
+                        <div>
+                            <h3>Top Picks</h3>
+                        </div>
+                        <div>
+                            <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_628,h_704/TopPicks/Cok"/>
+                        </div>
+
+                    </div>
+                    <div id="food">
+                        <h2>Recommended</h2>
+                        <div>
+                            <div>
+                                <h3>Chicken Maharaja Mac</h3>
+                                <p>Rs 235</p>
+                                <p>Enjoy the tallest burgers innovated by us. Created with chunky juicy grilled chicken patty paired along with fresh ingredients like jalape??o, onion, slice of cheese, tomatoes & crunchy lettuce dressed with the classical Habanero sauce.</p>
+                            </div>
+                            <div>
+                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/262656fef145b5595ea2a7cc68508b20"/>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Veg Maharaja Mac</h3>
+                                <p>Rs 250</p>
+                                <p>Enjoy the tallest burgers innovated by us. Created with perfectly fried corn and cheese patty paired along with fresh ingredients like jalape??o, onion, slice of cheese & crunchy lettuce dressed with cocktail sauce.</p>
+                            </div>
+                            <div>
+                                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/262656fef145b5595ea2a7cc68508b20"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+               
+            </div>
+           
+
+    </div>
+</body>
+</html>

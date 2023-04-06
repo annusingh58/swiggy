@@ -7,17 +7,17 @@
     <title>swiggyhome</title>
     <style>
 
-      /* * {
+      * {
             padding: 0;
             margin: 0;
-        } */
+        }
 
         
         #screen{
             height: 2500px;
             width:100%;
             /* margin:auto ; */
-            border: 5px solid orange;
+            /* border: 5px solid orange; */
             
         }
         #nvbar{
@@ -37,7 +37,7 @@
         #nvbar>div:nth-child(1){
             width: 40px;
             height: 70px;
-            border: 1px solid yellow;
+            /* border: 1px solid yellow; */
         }
         #nvbar>div:nth-child(1)>img{
             width: 40px;
@@ -70,25 +70,23 @@
             background-color: rgb(251,251,251);
             border-bottom: 1px solid gray;
             display: flex;
+            justify-content: space-between;
             margin: auto;
         }
-        #filter>div{
-            display: flex;
-            /* justify-content: space-around; */
-            /* margin-left: 45px;
-            margin-top: 20px; */
-        }
+      
         #filter>div:nth-child(2){
             width:71%;
-            /* justify-content: space-between; */
+            justify-content: space-around;
             display: flex;
-            margin-left: 24%;
+            flex-wrap: wrap;
             /* border:5px solid red; */
             
         }
         #filter>div:nth-child(1){
             width:15%;
             height: 70px;
+            display: flex;
+            align-items: center;
         }
 
         #filter>div:nth-child(1)>h1{
@@ -104,13 +102,13 @@
             font-size: 17px;
             color: gray;
             margin-top:44px;
-            width: 90%;
+            /* width: 20%; */
         
         }
         #pic{
             height:1500px;
             width:92%;
-            border:2px solid red;
+            /* border:2px solid red; */
             display: flex;
             justify-content: space-around;
             margin:auto ;
@@ -155,6 +153,84 @@
             
             
         }
+        #footer{
+            height: 850px;
+            width: 100%;
+            /* border: 5px solid red; */
+            background-color: black;
+            color: white;
+            
+           }
+           #footer>div{
+            width:90% ;
+            margin:auto;
+            /* border-bottom: 2px solid gray; */
+           }
+           #footer >div:nth-child(1){
+            width: 90%;
+            height:450px ;
+            border-bottom: 1px solid gray;
+            display: flex;
+            margin-bottom: 25px;
+            
+           }
+           #footer >div:nth-child(1)>div{
+            width: 35%;
+            height: 450px;
+            /* border: 4px solid gold; */
+            
+           }
+           #footer >div:nth-child(1)>div>h4{
+            margin-top: 55px;
+            margin-left: 15px;
+            margin-bottom: 35px;
+            font-size: 20px;
+            color: gray;
+
+           }
+           #footer >div:nth-child(1)>div>p{
+            margin-top: 20px;
+            font-size: 20px;
+           }
+           #footer >div:nth-child(1)>div:nth-child(4)>img{
+            margin-top: 45px;
+            height: 75px;
+
+           }
+
+
+
+           #footer >div:nth-child(3){
+            width: 90%;
+            height:450px ;
+            margin-top: 20px;
+            display: flex;
+            /* border-bottom: 1px solid gray; */
+            /* border: 5px solid red; */
+           }
+           
+
+           
+          #footer >div:nth-child(3)>div{
+            width: 35%;
+            height: 380px;
+           /* border: 3px solid yellow; */
+          }
+          #footer >div:nth-child(3)>div>p{
+            margin-top: 25px;
+            font-size: 20px;
+
+           }
+ 
+           
+          #footer >div:nth-child(2)>h4{
+            margin-top: 5px;
+            margin-left: 15px;
+            margin-bottom: 25px;
+            font-size: 20px;
+            color: gray;
+           }
+           
         
 
 
@@ -322,14 +398,171 @@
     
     
                 </div>
+                <div>
+                    <div>
+                        <img src="/kfc.jpg"/>
+                    </div>
+                    <div>
+                        <h4>KFC</h4>
+                        <P>Burgers, Biryani, American, Snacks, Fast Food</P>
+                        <P>4.2 18 MIN . Rs 200 FOR TWO</P>
+                        <h6>Flat Rs 125 OFF on 249</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/chayos.webp"/>
+                    </div>
+                    <div>
+                        <h4>Chaayos Chai+Snacks=Relax</h4>
+                        <P>Bakery, Beverages, Chaat, Desserts, Fast Food, Home Food, Italian, Maharashtrian...</P>
+                        <P>4.2 18 MIN . Rs 200 FOR TWO</P>
+                        <h6>40% OFF|Use TRYNEW</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/bikks.webp"/>
+                    </div>
+                    <div>
+                        <h4>BIKKS BIKANER</h4>
+                        <P>Bakery, Beverages, Snacks, Desserts</P>
+                        <P>4.2 28 MIN . Rs 400 FOR TWO</P>
+                        <h6>40% OFF|Use TRYNEW</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/bliss.jpg"/>
+                    </div>
+                    <div>
+                        <h4>Blisss</h4>
+                        <P>Bakery,Fast Food, Desserts</P>
+                        <P>4.2 14MIN . Rs 250 FOR TWO</P>
+                        <h6>50% OFF|Use TRYNEW</h6>
+                    </div>
+    
+    
+                </div>
+                <div>
+                    <div>
+                        <img src="/haldiram.webp"/>
+                    </div>
+                    <div>
+                        <h4>Haldiran's Resturants</h4>
+                        <P>NOrth indians,South Indian,Sweets,Chat, Snacks, Desserts</P>
+                        <P>3.9  30 MIN . Rs 300 FOR TWO</P>
+                        <h6>40% OFF|Use TRYNEW</h6>
+                    </div>
+    
+    
+                </div>
+
+                <div>
+                    <div>
+                        <img src="/gupta.webp"/>
+                    </div>
+                    <div>
+                        <h4>Sandwich</h4>
+                        <P>Bakery, Beverages, Snacks, Chat</P>
+                        <P>4.6 28 MIN . Rs 400 FOR TWO</P>
+                        <h6>40% OFF|Use TRYNEW</h6>
+                    </div>
+    
+    
+                </div>
+
+
               
            
        
        </div> 
+       <div id="footer">
+        <div>
+            <div>
+                <h4>COMPANY</h4>
+                <p>About us</p>
+                <p>Team</p>
+                <p>Careers</p>
+                <p>Swiggy blog</p>
+                <p>Bug Bounty</p>
+                <p>swiggy one</p>
+                <p>Swiggy Instamart</p>
+                <p>Swiggy Genie</p>
+            </div>
+            <div>
+                <h4>CONTACT</h4>
+                <p>Help & Support</p>
+                <p>Ride With us</p>
+            </div>
+            <div>
+                <h4>LEGAL</h4>
+                <p>Terms & Conditions</p>
+                <p>Refunds & Cancellation </p>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+                <p>Offer Terms</p>
+                <p>Phising & Fraud</p>
+                <p>Corporate -Swiggy Money Codes Terms and Conditions</p>
+
+            </div>
+            <div>
+                <img src="/apple store.webp"/>
+                <img src="/googleplay.webp"/>
+            </div>
+        </div>
+        <div>  
+                              <h4> WE DELIVER TO</h4>
+        </div>
+        <div>
+            <div>
+            
+                  <p>Abohar</p>
+                    <p>Adoni</p>
+                    <p>Agra</p>
+                    <p>Ajmer</p>
+                    <p>Akola</p>
+                    <p>Alappuzha</p>
+                </div>
+                <div>
+                    <p>Dehradun</p>
+                      <p>Dehri</p>  
+                        <p>Delhi</p>
+                        <p>Deoghar</p>
+                        <p>Dewas</p>
+                        <p>Dhanbad</p>
+                        
+                </div>
+                <div>
+                    <p>Khanna</p>
+                    <p>Kharagpur</p>
+                    <p>Kishangarh</p>
+                    <p> Kochi</p>
+                    <p>Kodaikanal</p>
+                    <p>Kohima</p>
+                        
+                </div>
+                <div>
+                    <p>Purulia</p>
+                    <p>Pusad</p>
+                    <p>Puttur</p>
+                    <p>Rae-Bareli</p>
+                    <p>Raghunathpur</p>
+                    <p>Raichur</p>
+                        
+                </div>
+            </div>
+        </div>
    </div>
                 
 
-            </div>
+            
         
 
 

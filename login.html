@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <script src="https://kit.fontawesome.com/5553f878fa.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #screen{
+            height: 350px;
+            width:40%;
+            margin: auto;
+            margin-top: 90px;
+            /* border:5px solid orange; */
+            padding: 10px;
+            box-shadow: 5px 5px 10px rgb(207, 203, 203);
+        }
+        #sign{
+            width:100%;
+            height: 120px;
+            /* border:2px solid black; */
+            display: flex;
+            justify-content: space-between;
+            /* margin-top: 15px; */
+        }
+        #sign>div:nth-child(1){
+            width: 60%;
+            height: 115px;
+            /* border:1px solid blue; */
+
+        }
+        #sign>div:nth-child(1)>i{
+            color: gray;
+            
+        }
+
+        #sign>div:nth-child(1)>h3{
+            font-size: 30px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+
+        }
+        #sign>div:nth-child(1)>p{
+            font-size: 16px;
+            color: orange;
+        }
+        #sign>div:nth-child(1)>p>span{
+            color: black;
+        }
+        #sign>div:nth-child(1)>div{
+            height:2px;
+            width:30px;
+            background-color: black;
+            margin-top: 5px;
+            
+        }
+         #sign>div:nth-child(2){
+            width: 20%;
+            height: 100px;
+            /* border:1px solid blue; */
+            margin-top: 15px;
+
+
+        }
+        #sign>div:nth-child(2)>img{
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid rgb(129, 83, 83); */
+            border-radius: 50%;
+            
+        }
+        #info{
+            width:100%;
+            /* height:200px; */
+            /* border:1px solid gray; */
+            margin-top: 25px;
+        }
+        #info>div{
+            width:100%;
+            height:71px;
+            border:1px solid gray;
+        }
+        
+        #info>div>input{
+            height:100%;
+            width:100%;
+            padding-left: 10px;
+            border:none;
+
+        }
+        
+       #screen>button:nth-child(3){
+        width: 100%;
+        height: 40px;
+        background-color: orange;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 3px;
+
+       }
+       #screen>p:nth-child(4){
+        font-size: 14px;
+        margin-top: 5px;
+       }
+       #screen>p:nth-child(4)>span{
+        color: gray;
+       }
+
+       @media screen and (max-width:1000px) {
+            #screen{
+                width: 70%;
+            }
+       }
+       @media screen and (max-width:700px) {
+            #screen{
+                width: 90%;
+                
+            }
+       }
+        
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="sign">
+
+            <div>
+                <i class="fa-solid fa-xmark"></i>
+                <h3>Login</h3>
+                <p> <span>or</span> Create an accout</p>
+                <div></div>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r"/>
+            </div>
+
+        </div>
+        <div id="info">
+            <div>
+                <input type="number" placeholder="Phone Number"/>
+            </div>
+           
+        </div>
+        <button>CONTINUE</button>
+        <p><span>By clicking on Login, I accept the,</span> Terms & Conditions & Privacy Policy</p>
+        
+
+    </div>
+</body>
+</html>

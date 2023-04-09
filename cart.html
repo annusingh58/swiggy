@@ -18,6 +18,7 @@
             width: 100%;
             height: 2500px;
             /* border:5px solid red; */
+            background-color: rgb(226, 221, 221);
         }
         #nvbar{
             height:80px;
@@ -25,6 +26,7 @@
             /* border:2px solid green; */
             display: flex;
             justify-content: space-around;
+            background-color: white;
             box-shadow: 5px 10px 18px rgb(224, 221, 221);
             align-items: center;
         }
@@ -100,7 +102,8 @@
             border:1px solid red;
             display: flex;
             /* justify-content: space-between; */
-            margin-top: 20px;
+            /* margin-top: 20px; */
+            background-color: white;
             
 
         }
@@ -142,6 +145,7 @@
             display: flex;
             margin-left: 100px;
             margin-top: 10px;
+            background-color: white;
 
         }
         #left>div:nth-child(1)>div:nth-child(2)>button{
@@ -154,39 +158,65 @@
             
         }
         #left>div:nth-child(2){
-            margin-top: 25px;
+            margin-top: 20px;
             width:100%;
             padding-left: 15px;
             height: 50px;
             border: 1px solid gray;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            
         
 
         }
         #left>div:nth-child(2)>p{
-            font-size: 20px;
+            font-size: 18px;
         
+        }
+        #payment{
+            height:400px ;
+            border:2px solid green;
+            width:100%;
+            padding: 10px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        #payment>div:nth-child(1){
+            width: 30%;
+            height:300px;
+            border:1px solid red;
+            background-color: rgb(237,241,247);
+        }
+        #payment>div:nth-child(2){
+            width: 65%;
+            height:300px;
+            border:1px solid red;
         }
         
 
 
         #right{
             width: 30%;
-            height: 500px;
+            height: 800px;
             border: 3px solid rgb(109, 21, 21);
             padding-left: 15px;
+            background-color: white;
         }
         #order{
             height: 80px;
             width:70%;
-            border:1px solid black;
+            /* border:1px solid black; */
             display: flex;
             margin-top: 15px;
             /* padding-left: 15px; */
+            background-color: white;
         }
         #order>div:nth-child(1){
             height:60px;
             width:70px;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         #order>div:nth-child(1)>img{
             margin-top: 5px;
@@ -205,17 +235,159 @@
         #idli{
             height:70px;
             width:100%;
-            border:1px solid red;
+            /* border:1px solid red; */
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            
+        }
+        #idli>div{
+            margin-top: 10px;
+            height: 50px;
+            width: 28%;
+            /* border: 1px solid green; */
+            
+        
+        }
+        #idli>div:nth-child(1)>p{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        #idli>div:nth-child(1)>span{
+            font-size: 13px;
+            color: gray;
+
+        }
+        #idli>div:nth-child(1)>span>i{
+            color: red;
+            
+        }
+
+
+        
+        #idli>div:nth-child(2)>button{
+            width: 60px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        #idli>div:nth-child(3)>p{
+            margin-top: 10px;
+            font-size: 14px;
+            margin-left: 10px;
+            color: gray;
+
+        }
+        #in{
+            width: 95%;
+            height: 40px;
+            margin-top: 15px;
+            border: 2px solid gray;
+        }
+        #in>input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            /* background-color: gray; */
+            color :gray
+
+        }
+
+        #opt{
+            height: 100px;
+            width: 100%;
+            /* border: 1px solid green; */
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 6px;
+            
+        }
+        #opt>div:nth-child(1){
+            height:20px ;
+            width: 30px;
+            /* border: 1px solid red; */
+        }
+        #opt>div:nth-child(1)>i{
+            margin-left: 10px;
+        }
+
+        #opt>div:nth-child(2){
+            width: 88%;
+            height: 90px;
+            /* border: 1px solid red; */
+        }
+        #opt>div:nth-child(2)>p{
+            color: gray;
+            margin-top: 5px;
+        }
+        #opt>div:nth-child(2)>h5{
+            color: black;
+            font-size: 15px;
+        }
+        #coupon{
+            width: 95%;
+            height: 60px;
+            display: flex;
+            border:1px dashed gray ;
+            margin-top: 20px;
+            align-items: center;
+            padding-left: 15px;
+            
+        }
+        #coupon>p{
+            color: gray;
+            
+        }
+        #bill{
+            height: 100px;
+            width: 95%;
+            margin-top: 15px;
+            /* border: 1px solid red; */
+        }
+        #bill>p{
+            font-size: 14px;
+            margin-bottom: 5px;
+            width:100%
+        }
+        #bill>div{
+            display: flex;
+            justify-content: space-between;
+        }
+        #bill>div>div>p{
+            color: grey;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        #tax{
+            width: 95%;
+            border-top: 1px solid gray;
             margin-top: 10px;
             display: flex;
             justify-content: space-between;
         }
-        #idli>div{
-            height: 60px;
-            width: 28%;
-            border: 1px solid green;
+        #tax>p{
+            margin-top: 15px;
+            font-size: 14px;
+            color: gray;
+        }
+
+        #pay{
+            width: 95%;
+            border-top: 2px solid black;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #pay>p{
+            margin-top: 20px;
+            font-size: 14px;
         
         }
+
+
+
+
 
 
 
@@ -241,9 +413,7 @@
                     <p><span><i class="fa-solid fa-cart-shopping"></i></span>Anu</p>
                 </div>
                 </div>
-                <!-- <div id="main">
-                   
-                </div> -->
+                
                 <div id="body">
                     <div id="left">
                         <div>
@@ -261,30 +431,89 @@
                         <div>
                             <p>Choose payment method</p>
                         </div>
-                        <div>
+                        <div id="payment">
+                            <div>
+                                <div>
+                                    <p>Wallet</p>
+                                    <i class="fa-solid fa-wallet"></i>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <p>UPI</p>
+                                            <i class="fa-solid fa-wallet"></i>
+                                            </div>
+        
+
+                            </div>
                             
                         </div>
                         
+                        <div></div>
+                    </div>
+                   
+
+
+                </div>
+                <div id="right">
+                    <div id="order">
+                        <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_100,h_100,c_fill/nigevzpo8kwhenytu3hb"/></div>
+                        <div><h4>Udupi Xpress</h4>
+                            <p>Kharghar</p>
+                        </div>
 
                     </div>
-                    <div id="right">
-                        <div id="order">
-                            <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_100,h_100,c_fill/nigevzpo8kwhenytu3hb"/></div>
-                            <div><h4>Udupi Xpress</h4>
-                                <p>Kharghar</p>
-                            </div>
-
+                    <div id="idli">
+                        <div>
+                            <p><i class="fa-regular fa-circle-dot"></i>Masala idli</p>
+                            <span>customize <i class="fa-solid fa-greater-than"></i></span>
                         </div>
-                        <div id="idli">
+                        <div><button>1</button></div>
+                        <div><P>Rs  95</P></div>
+                    </div>
+                    <div id="in">
+                        <input type="number" placeholder= "any suggestion ? We  will pass it on..."/>
+
+                    </div>
+                    <div id="opt">
+                        <div><i class="fa-regular fa-square"></i></div>
+                       <div>
+                        <h5> Opt in for No-contact Delivery</h5>
+                        <p>Unwell, or avoiding contact? Please select no-contact delivery. Partner will safely place the order outside your door (not for COD)</p>
+
+
+                       </div>
+                    </div>
+                    <div id="coupon">
+                        <i class="fa-solid fa-certificate"></i>
+                        <p>Apply Coupon</p>
+                    </div>
+                    <div id="bill">
+                        <p>Bill Details</p>
+                        <div>
                             <div>
-                                <p><i class="fa-regular fa-circle-dot"></i>Masala idli</p>
+                                <p>Item Total</p>
+                                <p>Delivery Fee | 6.2 km</p>
+                                
+                                    
                             </div>
-                            <div><button>-1+</button></div>
-                            <div><P>Rs  95</P></div>
+                            <div>
+                                <p>Rs 94</p>
+                                <p>Rs 81</p>
+                                
+                            </div>
                         </div>
 
                     </div>
+                    <div id="tax">
+                        <p> Govt Taxes & Other Charges</p>
+                        <p>Rs 14.15</p>
+                        
+                    </div>
+                    <div id="pay">
+                        <p>TO PAY</p>
+                        <p>Rs 189</p>
 
+                    </div>
                 </div>
                
     </div>

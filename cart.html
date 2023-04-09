@@ -71,13 +71,154 @@
 
         }
 
+        /* #main{
+            width:100%;
+            height:800px;
+
+        } */
+
         #body{
-            width:80%;
-            height:600px;
-            border: 1px solid gray;
+            width:85%;
+            height:800px;
+            /* border: 1px solid rgb(128, 128, 128); */
             margin: auto;
             margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            /* background-color: rgb(231,234,237); */
+
+        
         }
+        #left{
+            width: 67%;
+            height: 600px;
+            border: 3px solid blue;
+        }
+        #left>div:nth-child(1){
+            width:100% ;
+            height:170px;
+            border:1px solid red;
+            display: flex;
+            /* justify-content: space-between; */
+            margin-top: 20px;
+            
+
+        }
+        #left>div:nth-child(1)>div:nth-child(1){
+            width:69% ;
+            height:100%;
+            border:1px solid green;
+            padding-left: 20px;
+            
+
+        }
+        #left>div:nth-child(1)>div:nth-child(1)>h3{
+            margin-top: 10px;
+            font-size: 25px;
+            font-weight: normal;
+        }
+        #left>div:nth-child(1)>div:nth-child(1)>h3>i{
+            margin-left: 15px;
+        }
+
+        #left>div:nth-child(1)>div:nth-child(1)>h2{
+            margin-top: 30px;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        #left>div:nth-child(1)>div:nth-child(1)>p{
+            margin-top: 10px;
+            color: grey;
+        }
+        
+
+
+
+        #left>div:nth-child(1)>div:nth-child(2){
+            width:10% ;
+            height:30px;
+            border:1px solid green;
+            display: flex;
+            margin-left: 100px;
+            margin-top: 10px;
+
+        }
+        #left>div:nth-child(1)>div:nth-child(2)>button{
+            width:100% ;
+            height:100%;
+            color: white;
+            background-color: orange;
+            border: none;
+            font-size: 12px;
+            
+        }
+        #left>div:nth-child(2){
+            margin-top: 25px;
+            width:100%;
+            padding-left: 15px;
+            height: 50px;
+            border: 1px solid gray;
+        
+
+        }
+        #left>div:nth-child(2)>p{
+            font-size: 20px;
+        
+        }
+        
+
+
+        #right{
+            width: 30%;
+            height: 500px;
+            border: 3px solid rgb(109, 21, 21);
+            padding-left: 15px;
+        }
+        #order{
+            height: 80px;
+            width:70%;
+            border:1px solid black;
+            display: flex;
+            margin-top: 15px;
+            /* padding-left: 15px; */
+        }
+        #order>div:nth-child(1){
+            height:60px;
+            width:70px;
+            border: 1px solid red;
+        }
+        #order>div:nth-child(1)>img{
+            margin-top: 5px;
+            height: 100%;
+            width: 100%;
+        }
+        #order>div:nth-child(2){
+            margin-top: 12px;
+            margin-left: 20px;
+
+        }
+        #order>div:nth-child(2)>p{
+            color: gray;
+            font-size: 14px;
+        }
+        #idli{
+            height:70px;
+            width:100%;
+            border:1px solid red;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #idli>div{
+            height: 60px;
+            width: 28%;
+            border: 1px solid green;
+        
+        }
+
+
+
 
     </style>
 </head>
@@ -100,9 +241,52 @@
                     <p><span><i class="fa-solid fa-cart-shopping"></i></span>Anu</p>
                 </div>
                 </div>
+                <!-- <div id="main">
+                   
+                </div> -->
                 <div id="body">
+                    <div id="left">
+                        <div>
+                            <div>
+                                <h3>Delivery address <i class="fa-solid fa-circle-check"></i></h3> 
+                                <h2>ASMAAN </h2>
+                                <p> 1402 kharghar society,Kharghar,Navi Mumbai</p>
+                                <p>28 MINS</p>
+                            </div>
+                            
+                            <div>
+                                <button>CHANGE</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Choose payment method</p>
+                        </div>
+                        <div>
+                            
+                        </div>
+                        
+
+                    </div>
+                    <div id="right">
+                        <div id="order">
+                            <div><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_100,h_100,c_fill/nigevzpo8kwhenytu3hb"/></div>
+                            <div><h4>Udupi Xpress</h4>
+                                <p>Kharghar</p>
+                            </div>
+
+                        </div>
+                        <div id="idli">
+                            <div>
+                                <p><i class="fa-regular fa-circle-dot"></i>Masala idli</p>
+                            </div>
+                            <div><button>-1+</button></div>
+                            <div><P>Rs  95</P></div>
+                        </div>
+
+                    </div>
 
                 </div>
+               
     </div>
     
 </body>

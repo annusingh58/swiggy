@@ -163,7 +163,7 @@
             width:100%;
             padding-left: 15px;
             height: 50px;
-            border: 1px solid gray;
+            /* border: 1px solid gray; */
             background-color: white;
             display: flex;
             align-items: center;
@@ -177,7 +177,7 @@
         }
         #payment{
             height:600px ;
-            border:2px solid green;
+            /* border:2px solid green; */
             width:100%;
             padding: 10px;
             background-color: white;
@@ -214,7 +214,7 @@
         #payment>div:nth-child(2){
             width: 65%;
             height:590px;
-            border:1px solid red;
+            /* border:1px solid red; */
             margin: auto;
             
         }
@@ -222,21 +222,105 @@
         
         #payment>div:nth-child(2)>div{
             width: 100%;
-            height:150px;
-            border:1px solid black;
+            height:180px;
             margin-top: 15px;
+            border: 1px solid rgb(203, 201, 201);
+
         }
         #payment>div:nth-child(2)>div:nth-child(1)>div{
             padding-left: 15px;
+            height: 80px;
+            width:100%;
+            /* border: 2px solid yellow; */
 
 
         }
-        /* #payment>div:nth-child(2)>div:nth-child(1)>div:nth-child(1){
-            border: 1px solid black;
+        #payment>div:nth-child(2)>div:nth-child(1)>div>img{
+            padding-left: 15px;
+            height: 25px;
+            width:20%;
+            /* border: 2px solid yellow; */
+            margin-top: 30px;
+
+
+        }
+        
+        #payment>div:nth-child(2)>div:nth-child(1)>div>p{
+            font-size: 18px;
+        }
+        #payment>div:nth-child(2)>div:nth-child(1)>div>button{
             height: 40px;
-            width: 90px;
+            width:25%;
+            background-color: rgb(96,178,70);
+            border: none;
+            margin-top: 10px;
+        }
+        #payment>div:nth-child(2)>div:nth-child(2)>div{
+            /* border:1px solid blueviolet; */
+            padding-left: 20px;
             
-        } */
+        }
+        #payment>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+            height: 40px;
+            width:15%;
+            /* border:1px solid red; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+        #payment>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>img{
+            height: 100%;
+            width:100%;
+        
+        }
+
+        #payment>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>p:nth-child(1){
+            font-size: 17px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        #payment>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>p:nth-child(2){
+            font-size: 14px;
+            padding-left: 10px;
+            color: rgb(252,128,25)
+
+        }
+
+        #payment>div:nth-child(2)>div:nth-child(3)>div:nth-child(1){
+            height: 40px;
+            width:10%;
+            /* border:1px solid red; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+        #payment>div:nth-child(2)>div:nth-child(3)>div:nth-child(1)>img{
+            height: 100%;
+            width:100%;
+        
+        }
+
+        #payment>div:nth-child(2)>div:nth-child(3)>div:nth-child(2)>p:nth-child(1){
+            font-size: 17px;
+            color: rgb(40,44,63);
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        #payment>div:nth-child(2)>div:nth-child(3)>div:nth-child(2)>p:nth-child(2){
+            font-size: 14px;
+            color: rgb(40,44,63);
+            padding-left: 10px;
+            color: rgb(252,128,25)
+
+        }
+
+
+
+
+
+       
         
 
 
@@ -435,7 +519,7 @@
 
         
         #footer{
-            height: 850px;
+            /* height: 850px; */
             width: 100%;
             /* border: 5px solid red; */
             background-color: black;
@@ -510,6 +594,35 @@
             margin-bottom: 25px;
             font-size: 20px;
             color: gray;
+           }
+
+
+
+           @media screen and (max-width:1000px) {
+             #payment{
+                display: none;
+             }
+
+             #right{
+                width:100%;
+                height: 70%;
+             }
+             #left{
+                width: 100%;
+                
+             }
+             #left>div:nth-child(2){
+                display: none;
+        
+             }
+             #body{
+                width:100%;
+            flex-direction: column;
+            }
+            #left>div:nth-child(1){
+                width:100%;
+            }
+
            }
 
 

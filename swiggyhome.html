@@ -17,7 +17,7 @@
 
           #screen{
             width: 100%;
-            height: 2350px;
+            /* height: 2350px; */
             /* border:5px solid orange; */
           }
            #swiggy{
@@ -128,32 +128,56 @@
            }
 
            #order{
-            width:100%;
-            height:350px;
+            /* width:100%; */
+            /* height:350px; */
             /* border: 2px solid red; */
             display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
             background-color: black;
-
-            
            }
            #order>div{
             display: flex;
-            width: 33%;
-            height: 100%;
-            border: solid 1px black;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            width: 32%;
+            height: 350px;
+            /* border: solid 4px yellow; */
            }
-           #order>div>img{
+           #order>div>div:nth-child(1){
             background-color: black;
-            height: 100%;
-            width: 50%;
+            height:60%;
+            width: 70%;
+            /* border:3px solid red; */
             
            }
+            #order>div>div:nth-child(1)>img{
+                height:100%;
+                width:100%;
+            }
+            #order>div>div:nth-child(2){
+            background-color: black;
+            height: 40%;
+            width: 90%;
+            color: white;
+            /* border:3px solid yellow; */
+            padding-top: 20px;
+           }
+            #order>div>div:nth-child(2)>h3{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+             #order>div>div:nth-child(2)>p{
+                text-align: center;
+             }
 
            #pocket{
-            height: 590px;
+            /* height: 590px; */
             width:100%;
             /* border: 4px solid red; */
             display: flex;
+            align-items: center;
             margin: auto;
            }
            #pocket>div{
@@ -299,6 +323,23 @@
             font-size: 20px;
             color: gray;
            }
+
+           @media screen and (max-width:1000px) {
+            #order>div{
+                width:100%;
+            }
+            #order>div>div:nth-child(1){
+                width:30%;
+            }
+            #pocket{
+                flex-direction: column-reverse;
+            }
+            #pocket>div:nth-child(2){
+            display: flex;
+            width: 70%;
+           }
+
+           }
            
     </style>
 </head>
@@ -311,7 +352,7 @@
                         <img src="./logoswiggy.jpeg"/>
                     </div>
                    <div> 
-                    <h4>Login</h4>
+                    <h4 id="switch">Login</h4>
                     <button>Sign Up</button>
                 </div>
                     </div>
@@ -340,13 +381,32 @@
         
         <div id="order">
                 <div>
+                    <div>
                     <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"/>
                 </div>
                 <div>
-                    <img src="./orer2.webp"/>
+                    <h3>No Minimum order</h3>
+                    <p>Order in for yourself or for the group,with no restrications on order value</p>
+                </div>
                 </div>
                 <div>
-                    <img src="./order3.webp"/>
+                    <div>
+                        <img src="./orer2.webp"/>
+
+                    </div>
+                    <div>
+                        <h3>Live Order Tracking</h3>
+                        <p>Know where your order is at all times,from the restaurants to your doorstep</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./order3.webp"/>
+                    </div>
+                    <div>
+                        <h3>Fast Delivery</h3>
+                        <p>Experience Swiggy's Superfast delivery for food delivered fresh & on time</p>
+                    </div>
                 </div>
         </div>
 
@@ -454,6 +514,15 @@
 
         </div>
     </div>
-    
+    <script>
+        window.onload=()=>{
+            // alert("working");
+            var user=JSON.parse(localStorage.getItem("slogin"));
+            var div=document.getElementById("switch");
+            var name=`<h1>${user.uname}</h1>`;
+            div.innerHTML=name;
+
+        }
+    </script>
 </body>
 </html>

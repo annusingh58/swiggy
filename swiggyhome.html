@@ -354,7 +354,9 @@
                     </div>
                    <div> 
                     <h4 id="switch">Login</h4>
-                    <button>Sign Up</button>
+                    <!-- <div id="Logout"></div> -->
+                    <button >Sign Up</button>
+                     <div id="Logout"></div>
                 </div>
                     </div>
                     <div>
@@ -520,10 +522,20 @@
             // alert("working");
             var user=JSON.parse(localStorage.getItem("slogin"));
             var div=document.getElementById("switch");
+            var divforlogout=document.getElementById("Logout")
             var name=`<h1>${user.uname}</h1>`;
+            var button=`<button onclick="Logout()">Logout</button>`;
             div.innerHTML=name;
+            divforlogout.innerHTML=button;
 
         }
+        function Logout(){
+            alert("logout successfull");
+            localStorage.removeItem("slogin");
+            window.location.reload();
+
+        }
+        
     </script>
 </body>
 </html>

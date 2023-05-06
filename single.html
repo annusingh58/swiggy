@@ -527,8 +527,8 @@
                         </div>
                     </div>
 
-                    <div id="browse">
-                        <button>Browse Menu</button>
+                    <div id="cart" id="browse">
+                        <!-- <button>Browse Menu</button> -->
                     </div>
                     
 
@@ -629,6 +629,7 @@
                             <p>Burgers,Beverages</p>
                             <p>Vashi,o.5 km</p>
                             <p>0.5 Kms| Rs 34 Delivery fee will apply</p>`;
+
         
         divToAppendName.innerHTML = nameStructure;
 
@@ -639,9 +640,15 @@
         var divToAppendImage = document.getElementById("replace-image");
         var imageStructure = `<img src="${product.proimage}" alt="" />`;
         divToAppendImage.innerHTML = imageStructure;
+
+        var divToAppendcart = document.getElementById("cart");
+        var cartStructure = `<button onclick ='addCart(${JSON.stringify(product)})'id="browse">add to cart</button>`;
+        divToAppendcart.innerHTML = cartStructure;
+
+
     }
     function addCart(){
-        alert("Adding to cart")
+        alert("Adding to cart");
     }
 </script>
 

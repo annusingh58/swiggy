@@ -319,7 +319,7 @@
                     border: none;
                     border-radius: 20px;
                     position: fixed;
-                    top: 550px;
+                    top: 300px;
                     box-shadow: 5px 2px 15px rgb(226, 222, 222);
                 }
 
@@ -527,9 +527,11 @@
                         </div>
                     </div>
 
-                    <div id="cart" id="browse">
+                    <div id="browse">
                         <!-- <button>Browse Menu</button> -->
                     </div>
+
+                    <div id="cart"></div>
                     
 
                 </div>
@@ -642,13 +644,14 @@
         divToAppendImage.innerHTML = imageStructure;
 
         var divToAppendcart = document.getElementById("cart");
-        var cartStructure = `<button onclick ='addCart(${JSON.stringify(product)})'id="browse">add to cart</button>`;
+        var cartStructure = `<button onclick='addcart()'>add to cart</button>`;
         divToAppendcart.innerHTML = cartStructure;
 
 
     }
-    function addCart(){
-        alert("Adding to cart");
+
+    function addcart(){
+        alert("adding to cart");
     }
 </script>
 

@@ -644,7 +644,7 @@
         divToAppendImage.innerHTML = imageStructure;
 
         var divToAppendcart = document.getElementById("cart");
-        var cartStructure = `<button onclick='addcart()'>add to cart</button>`;
+        var cartStructure = `<button onclick='addcart(${JSON.stringify(product)})'>add to cart</button>`;
         divToAppendcart.innerHTML = cartStructure;
 
 

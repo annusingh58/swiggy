@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
+    <title>singleProduct</title>
     <script src="https://kit.fontawesome.com/5553f878fa.js" crossorigin="anonymous"></script>
     <style>
         *{
@@ -618,4 +618,25 @@
 
     </div>
 </body>
+<script>
+    <button onclick= 'add to cart(${JSON.stringify(product)})'>add to cart</button>;
+    function addcart(product){
+        var currentuser=JSON.parse(localStorage.getItem("userdata"));
+        var flagforuser=false;
+        for(i=0;i<userlength.cart;i++){
+        if(currentuser.email==userdata[i].email){
+        alert("working");
+        if(userdata[i].cartproducts== undefined){
+            userdata[i].cartproducts=[product];
+        }
+        else{
+            userdata[i].cartproducts.push(product);
+        }
+        alert("product added to cart");
+        window.location.href='./cart.html'
+    }
+    }
+    localStorage.setItem("userdata",JSON.stringify(userdata))
+    }
+</script>
 </html>

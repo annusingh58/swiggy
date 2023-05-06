@@ -683,6 +683,8 @@
     
 </body>
 <!-- <script>
+
+
     window.onload=function(){
         // alert("work on");
         var divtoshowproduct=document.getElementById("productsT");
@@ -699,8 +701,9 @@
         console.log(finalData,"finalData here");
         divtoshowproduct.innerHTML=finalData;
     }
-</script> -->
-<script>
+</script>  -->
+ <script>
+
     window.onload=function(){
         // alert("work on");
         var divtoshowproduct=document.getElementById("productsT");
@@ -708,7 +711,7 @@
         var productFromLS=JSON.parse(localStorage.getItem("product"));
         for(i=0;i<productFromLS.length;i++){
             finalData+=`<div onclick='redirect(${JSON.stringify(productFromLS[i])})' id="singlePro" >
-                <img src=${productFromLS[i].proimage}/>
+                <img src='${productFromLS[i].proimage}'/>
                 <h3>${productFromLS[i].proname}</h3>
                 <p>${productFromLS[i].proprice}</p>
                 </div>`;
@@ -726,5 +729,5 @@
         }
 
 
-</script>
+</script> 
 </html>

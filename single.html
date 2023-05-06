@@ -450,7 +450,7 @@
                 </div>
                 <div id="order">
                     <div id="order1">
-                        <div>
+                        <div id="replace-name">
                             <h3>McDonald's</h3>
                             <p>Burgers,Beverages</p>
                             <p>Vashi,o.5 km</p>
@@ -471,7 +471,7 @@
                         <p><span><i class="fa-solid fa-circle-half-stroke"></i></span>16MIN</p>                          </p>                                
 
                             </div>
-                            <div>
+                            <div id="replace-price">
                                 <p><span><i class="fa-solid fa-indian-rupee-sign"></i></span>₹400 for two</p>
                             </div>
                         </div>
@@ -498,7 +498,7 @@
                         <div>
                             <h3>Top Picks</h3>
                         </div>
-                        <div>
+                        <div id="replace-image">
                             <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_628,h_704/TopPicks/Cok"/>
                         </div>
 
@@ -618,25 +618,31 @@
 
     </div>
 </body>
+
+
 <script>
-    <button onclick= 'add to cart(${JSON.stringify(product)})'>add to cart</button>;
-    function addcart(product){
-        var currentuser=JSON.parse(localStorage.getItem("userdata"));
-        var flagforuser=false;
-        for(i=0;i<userlength.cart;i++){
-        if(currentuser.email==userdata[i].email){
-        alert("working");
-        if(userdata[i].cartproducts== undefined){
-            userdata[i].cartproducts=[product];
-        }
-        else{
-            userdata[i].cartproducts.push(product);
-        }
-        alert("product added to cart");
-        window.location.href='./cart.html'
+    window.onload = function () {
+        var product = JSON.parse(localStorage.getItem("current-product"));
+
+        var divToAppendName = document.getElementById("replace-name");
+        var nameStructure = `<h3>${product.proname}</h3>
+                            <p>Burgers,Beverages</p>
+                            <p>Vashi,o.5 km</p>
+                            <p>0.5 Kms| Rs 34 Delivery fee will apply</p>`;
+        
+        divToAppendName.innerHTML = nameStructure;
+
+        var divToAppendPrice = document.getElementById("replace-price");
+        var priceStructure = `<p><span><i class="fa-solid fa-indian-rupee-sign"></i></span>${product.proprice} for two</p>`;
+        divToAppendPrice.innerHTML = priceStructure;
+
+        var divToAppendImage = document.getElementById("replace-image");
+        var imageStructure = `<img src="${product.proimage}" alt="" />`;
+        divToAppendImage.innerHTML = imageStructure;
     }
-    }
-    localStorage.setItem("userdata",JSON.stringify(userdata))
+    function addCart(){
+        alert("Adding to cart")
     }
 </script>
+
 </html>

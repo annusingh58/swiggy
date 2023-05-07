@@ -498,7 +498,7 @@
                         <div>
                             <h3>Top Picks</h3>
                         </div>
-                        <div id="replace-image">
+                        <div >
                             <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_628,h_704/TopPicks/Cok"/>
                         </div>
 
@@ -513,7 +513,7 @@
                             </div>
                             <div>
                                 <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/262656fef145b5595ea2a7cc68508b20"/>
-                                <button onclick="addcart()">ADD CART</button>
+                                <!-- <button onclick="addcart()">ADD CART</button> -->
 
                             </div>
                         </div>
@@ -525,7 +525,7 @@
                             </div>
                             <div>
                                 <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/262656fef145b5595ea2a7cc68508b20"/>
-                                <button onclick="addcart()">ADD CART</button>
+                                <!-- <button onclick="addcart()">ADD CART</button> -->
 
                             </div>
                         </div>
@@ -535,9 +535,7 @@
                         <button>Browse Menu</button>
                     </div>
 
-                    <!-- <div id="cart">
-                        <button onclick="addcart()">Add to  cart</button>
-                    </div> -->
+                    
                     
 
                 </div>
@@ -628,7 +626,7 @@
 </body>
 
 
-<script>
+<!-- <script>
     window.onload = function () {
         var product = JSON.parse(localStorage.getItem("current-product"));
 
@@ -659,6 +657,22 @@
     function addcart(){
         alert("adding to cart");
     }
-</script>
+</script> -->
 
+
+<script>
+    window.onload = function () {
+        var product = JSON.parse(localStorage.getItem("current-product"));
+        console.log(product);
+        var divToAppendProduct = document.getElementById("Top");
+        var structure = `<div> <img src='${product.proimage}' /> <br/>
+             <h1>${product.proname}</h1><br/> <p>${product.proprice}</p><br/>
+              <button onclick='addCart()'>Add to cart</button> </div>`;
+        // console.log(structure, "here");
+        divToAppendProduct.innerHTML = structure;
+    }
+    function addCart(){
+        alert("Adding to cart....")
+    }
+</script>
 </html>

@@ -513,6 +513,8 @@
                             </div>
                             <div>
                                 <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/262656fef145b5595ea2a7cc68508b20"/>
+                                <button onclick="addcart()">ADD CART</button>
+
                             </div>
                         </div>
                         <div>
@@ -523,15 +525,19 @@
                             </div>
                             <div>
                                 <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/262656fef145b5595ea2a7cc68508b20"/>
+                                <button onclick="addcart()">ADD CART</button>
+
                             </div>
                         </div>
                     </div>
 
                     <div id="browse">
-                        <!-- <button>Browse Menu</button> -->
+                        <button>Browse Menu</button>
                     </div>
 
-                    <div id="cart"></div>
+                    <!-- <div id="cart">
+                        <button onclick="addcart()">Add to  cart</button>
+                    </div> -->
                     
 
                 </div>
@@ -643,7 +649,7 @@
         var imageStructure = `<img src="${product.proimage}" alt="" />`;
         divToAppendImage.innerHTML = imageStructure;
 
-        var divToAppendcart = document.getElementById("cart");
+        var divToAppendcart = document.getElementById("");
         var cartStructure = `<button onclick='addcart(${JSON.stringify(product)})'>add to cart</button>`;
         divToAppendcart.innerHTML = cartStructure;
 
